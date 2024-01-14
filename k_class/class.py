@@ -19,13 +19,15 @@ class A:
     def print_name(self, name):
         print(self.name)
         print(name)
-        print(self.data1, self.data2)
+        # print(self.data1, self.data2)
 
 #객체화 / 필드가 객체화 될 때마다 새로 생성된다. a필드, b필드, ... => a, b는 다른 주소를 가지고 있다.
 #a = 객체
 a = A(10, 20, name='ddeock') # new -> 메모리 할당, 주소 -> init의 self에 주소가 담긴다. -> 객체에 담긴다.
-print(a) #주소값이 나온다. A의 객체다.
-print(a.data1, a.data2)
+# 객체를 변수에 할당하면 해당 변수는 객체를 참조. 즉, 해당 객체가 메모리 상에 위치한 주소를 가리키게 됩니다.
+# print(a) #주소값이 나온다. A의 객체다.
+# print(a.data1, a.data2)
+
 a.print_name('zzone')
 # a.data1 = 10
 # a.data2 = 20

@@ -23,6 +23,6 @@ class B(A):
         print('B')
 
 b = B('장태훈') #b 객체 생성: 해당 필드(B)가 메모리에 할당이 되고, 주소값을 가지고와서 저장한다.
-print(b.name)
-b.print_intro()
+# print(b.name)
+# b.print_intro()
 print(b.add(1, 2))

@@ -1,7 +1,6 @@
 from bank_module import *
 from message_module import *
 
-
 if __name__ == '__main__':
 
     while True:
