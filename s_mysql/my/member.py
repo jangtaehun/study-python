@@ -10,18 +10,18 @@ if __name__ == '__main__':
     password = '7890'
     encryption = hashlib.sha256()
     encryption.update(password.encode('utf-8'))
-    insert_params = ['lss1234@naver.com', encryption.hexdigest(), '이순신']
+    insert_params = ['jangth0056@naver.com', encryption.hexdigest(), '장태훈']
     # save(insert_query, insert_params)
 
     # 회원 정보 전체 조회
     find_all_query = "select email, password, name from tbl_member"
-    # members = find_all(find_all_query)
+    members = find_all(find_all_query)
     # print(members)
 
     # 이메일로 회원 1명 조회
     find_by_id_query = "select email, password, name from tbl_member where email = %s"
     params = ['lss1234@naver.com']
-    # member = find_by_id(find_by_id_query, params)
+    member = find_by_id(find_by_id_query, params)
     # print(member)
 
     # 회원 정보 수정, email에 gmail이 포함되어 있으면, 이름 뒤에 님을 붙인다.
