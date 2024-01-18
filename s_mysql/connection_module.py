@@ -4,7 +4,7 @@ from pymysql.cursors import Cursor
 
 # 원하는 MySQL 서버와 연동하는 함수
 def connect():
-    conn = pymysql.connect(host='43.203.118.45', user='mysql', password='1234', db='test', charset='utf8', autocommit=False)
+    conn = pymysql.connect(host='43.201.48.184', user='mysql', password='1234', db='test', charset='utf8', autocommit=False)
     cursor = conn.cursor(pymysql.cursors.DictCursor)
     return conn, cursor
 

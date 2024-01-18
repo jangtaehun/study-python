@@ -16,4 +16,15 @@ if __name__ == '__main__':
         print(f'상품명: {product["name"]}')
 
     # 상품 정보 중 가격이 3000원 이상인 상품은 10% 할인해준다.
+    update_query = "update tbl_product set price = price - (price * 0.1) where price >= %s"
+    update_params = [3000]
+    # update(update_query, update_params)
+
     # 평균 가격보다 높은 상품은 모두 삭제한다.
+    find_all_query = "select avg(price) as avg from tbl_product"
+    products_avg = find_all(find_all_query)
+    avg = products_avg[0]['avg']
+    delete_params = [avg]
+
+    delete_query = "delete from tbl_product where price > %s"
+    # delete(delete_query, delete_params)
