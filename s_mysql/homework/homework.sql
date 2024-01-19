@@ -41,8 +41,15 @@ create table tbl_reservation(
 );
 
 
+drop table tbl_reservation;
+drop table tbl_client;
+drop table tbl_part_time;
+drop table tbl_conference_room;
+drop table tbl_office;
+
 select * from tbl_client;
 select * from tbl_office;
 select * from tbl_conference_room;
 select * from tbl_part_time;
 select * from tbl_reservation;
+

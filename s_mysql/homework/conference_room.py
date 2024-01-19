@@ -1,0 +1,2 @@
+class ConferenceRoom:
+    pass
