@@ -16,8 +16,9 @@ def find_all(cursor: Cursor, query: str) -> list:
     cursor.execute(query)
     return cursor.fetchall()
 
+
 @execute
-def find_all_by(cursor: Cursor, query: str, params: str) -> list:
+def find_all_by(cursor: Cursor, query: str, params: tuple) -> list:
     cursor.execute(query, params)
     return cursor.fetchall()
 
