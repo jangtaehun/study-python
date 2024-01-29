@@ -8,13 +8,16 @@ print(list(map(lambda string: string.lower(), string)))
 # 출력 예: 3519
 hangul = "공일이삼사오육칠팔구"
 data = "삼오일구"
-
 print(int("".join(list(map(lambda s: str(hangul.index(s)), data)))))
 
 # 입력받은 정수를 한글로 변경
 # 입력 예: 3519
 # 출력 예: 삼오일구
-# print(list(map(lambda s: hangul[ord(s) - 48], str(data))))
+# hangul = "공일이삼사오육칠팔구"
+# data = 3519
+# print("".join(list(map(lambda s: hangul[int(s)], str(data)))))
+# print("".join(list(map(lambda s: hangul[ord(s) - 48], str(data)))))
+
 
 
 # 'user/join', 'user/login', 'post/write', 'order/pay', 'order/list', 'post/read'

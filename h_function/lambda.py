@@ -15,6 +15,12 @@ lambda num1, num2: num1 + num2
 print(list(map(lambda num: num+2, [1, 2, 3, 4])))
 print()
 
+#서울시 -> 부산광역시
+city = ['서울시', '부산광역시', '서울시', '부산광역시']
+# print(list(filter(lambda city: city != '서울시' and city != '부산광역시', city)))
+cities = list(map(lambda city: '부산광역시', city))
+print(cities)
+
 #실습
 # 아래의 list의 각 요소에 2를 곱하여 변경
 datas = [2, 4, 6, 8]
