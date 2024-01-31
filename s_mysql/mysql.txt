@@ -205,7 +205,7 @@ DDL(Data Definition Language): 데이터 정의어
 	번호PK		번호PK		번호PK
 	----------------------------------------
 	아이디U, NN	날짜NN		이름NN
-	비밀번호NN		회원번호FK, NN	가격D=0
+	비밀번호NN	회원번호FK,     NN	가격D=0
 	이름NN		상품번호FK	, NN	재고D=0
 	주소NN
 	이메일
